@@ -248,10 +248,8 @@ namespace XivAlexander {
 			// Revert before doing anything other than hitting striking dummies.
 			// If you lower this value to an unreasonable extent, expect to get called out and banned from ranking communities.
 			// SE probably doesn't care enough, but other players will.
-			Item<int64_t> ExpectedAnimationLockDurationUs = CreateConfigItem(this, "ExpectedAnimationLockDurationUs", 75000LL);
-
-			// Should be the doubled value of the above.
-			Item<int64_t> MaximumAnimationLockDurationUs = CreateConfigItem(this, "MaximumAnimationLockDurationUs", 150000LL);
+			Item<int64_t> ExpectedAnimationLockDurationUs = CreateConfigItem(this, "ExpectedAnimationLockDurationUs", -200000LL);
+			Item<int64_t> MaximumAnimationLockDurationUs = CreateConfigItem(this, "MaximumAnimationLockDurationUs", -200000LL);
 
 			Item<bool> ReducePacketDelay = CreateConfigItem(this, "ReducePacketDelay", false);
 			Item<bool> TakeOverLoopbackAddresses = CreateConfigItem(this, "TakeOverLoopback", false);
