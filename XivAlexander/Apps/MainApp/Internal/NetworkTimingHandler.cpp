@@ -385,8 +385,8 @@ struct XivAlexander::Apps::MainApp::Internal::NetworkTimingHandler::Implementati
 				}
 			}
 
-			// Disallow negative delay values.
-			delay = std::max(delay, 0LL);
+			// allow negative delay values.
+			// delay = std::max(delay, 0LL);
 
 			// Return the new animation lock time without server response time delay, but with artificial delay (safety/lag) value.
 			description << std::format(" delay={}us", delay);
